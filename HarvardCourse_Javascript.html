@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <script>
+        //Buttons
+        document.addEventListener("DOMContentLoaded", function () {
+            //Change h1 to blue
+            document.querySelector('#blue').onclick = function x() {
+                    document.querySelector('#Hello').style.color = 'blue';
+            }
+            //Change h1 to red
+            document.querySelector('#red').onclick = function x() {
+                    document.querySelector('#Hello').style.color = 'red';
+            }
+            //Change h1 to green
+            document.querySelector('#green').onclick = function x() {
+                    document.querySelector('#Hello').style.color = 'green';
+            }
+
+        });
+        //Autofocus
+        document.addEventListener('DOMDontentLoaded', function xs(){
+            const name = document.querySelector("#color").value;
+            document.querySelector('form').onsubmit = function xr(){
+            //change to blue
+            if(name == "blue"){
+                    document.querySelector('#Hello').style.color = 'blue';
+                   
+                }
+             //change to red
+            if(name == "red") {               
+                    document.querySelector('#Hello').style.color = 'red';
+            
+            }
+             //change to green   
+            if(name == "green") {
+                    document.querySelector('#Hello').style.color = 'green';
+            
+                };
+            }
+        });
+
+    </script>
+    <body>
+        <h1 id ="Hello">Hello</h1>
+          <form>
+            <input autofocus id ="color" placeholder="color" type= "text">
+            <input type ="submit">
+        </form>
+        <button id ="blue">Blue</button>
+        <button id = "red">Red</button>
+        <button id ="green">Green</button>
+    </body>
+</html>
